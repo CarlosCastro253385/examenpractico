@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda tenis- Inicio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="KickStyle logo" width="100" height="100"> </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="menu.html">Catálogo</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="carousel-container">
+                <button class="carousel-btn btn-prev" onclick="moveCarousel(-1)">&#10094;</button>
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide">
+                        <img src="tenis5.avif" alt="Paw Patrol Edition" class="carousel-img">
+                        <div class="carousel-content">
+                            <h2>PAW PATROL - PATRULLA DE TENIS</h2>
+                            <p>Estilo infantil con amortiguación ideal para aventuras urbanas.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="tenis6.avif" alt="Bluey Style" class="carousel-img">
+                        <div class="carousel-content">
+                            <h2>TENNIS BLUEY</h2>
+                            <p>Comodidad diaria con diseño dinámico para cada paso.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="tenis7.avif" alt="Spider Shoes" class="carousel-img">
+                        <div class="carousel-content">
+                            <h2>SPIDER-SHOES</h2>
+                            <p>Look atrevido y soporte perfecto para salir a jugar.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="tenis13.jpg" alt="TENNIS DE LA AMISTAD" class="carousel-img">
+                        <div class="carousel-content">
+                            <h2>TENNIS DE LA AMISTAD</h2>
+                            <p>Diversion maxima y perfecto para hacer amigos</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn btn-next" onclick="moveCarousel(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Modelos Más Vendidos</h2>
+            <div class="grid-container">
+                <!-- 1. Morado Lavanda -->
+                <div class="card">
+                    <div class="card-tag">Top 1</div>
+                    <div class="card-img"><img src="tenis1.jpg" alt="Lavender Street"></div>
+                    <div class="card-info">
+                        <h3>Lavender Velvet</h3>
+                        <p>Diseño urbano y moderno en tono morado lavanda suave.</p>
+                        <p class="price">$1,199</p>
+                    </div>
+                </div>
+                <!-- 2. Morado y ya -->
+                <div class="card">
+                    <div class="card-img"><img src="tenis2.jpg" alt="Purple Classic"></div>
+                    <div class="card-info">
+                        <h3>Purple Style</h3>
+                        <p>Estilo urbano clásico con un color morado intenso y limpio.</p>
+                        <p class="price">$1,399</p>
+                    </div>
+                </div>
+                <!-- 3. Luces de colores -->
+                <div class="card">
+                    <div class="card-img"><img src="tenis14.jpg" alt="Neon Lights"></div>
+                    <div class="card-info">
+                        <h3>Glow Flash</h3>
+                        <p>Divertido calzado infantil integrado con luces de colores brillantes.</p>
+                        <p class="price">$1,099</p>
+                    </div>
+                </div>
+                <!-- 4. Moños (Bow) -->
+                <div class="card">
+                    <div class="card-img"><img src="tenis20.jpg" alt="Bow Ribbon"></div>
+                    <div class="card-info">
+                        <h3>Sweet Ribbon</h3>
+                        <p>Detalle coqueto con moños decorativos que añaden elegancia.</p>
+                        <p class="price">$1,299</p>
+                    </div>
+                </div>
+                <!-- 5. Plaid tipo ajedrez -->
+                <div class="card">
+                    <div class="card-img"><img src="tenis16.webp" alt="Chess Plaid"></div>
+                    <div class="card-info">
+                        <h3>Checkerboard Classic</h3>
+                        <p>Patrón textil de ajedrez en un diseño atemporal muy versátil.</p>
+                        <p class="price">$1,149</p>
+                    </div>
+                </div>
+                <!-- 6. Beetlejuice -->
+                <div class="card">
+                    <div class="card-img"><img src="tenis17.jpg" alt="Beetlejuice Edition"></div>
+                    <div class="card-info">
+                        <h3>Beetlejuice Edition</h3>
+                        <p>Estilo gótico y atrevido con franjas al más puro estilo del bioexorcista.</p>
+                        <p class="price">$1,249</p>
+                    </div>
+                </div>
+                <!-- 7. Blanco básico -->
+                <div class="card">
+                    <div class="card-img"><img src="tenis18.jpg" alt="White Basic"></div>
+                    <div class="card-info">
+                        <h3>Essential White</h3>
+                        <p>Tenis blancos básicos indispensables, cómodos para el día a día.</p>
+                        <p class="price">$1,299</p>
+                    </div>
+                </div>
+                <!-- 8. Verde de gamuza -->
+                <div class="card">
+                    <div class="card-img"><img src="tenis19.jpg" alt="Green Suede"></div>
+                    <div class="card-info">
+                        <h3>Suede Forest</h3>
+                        <p>Acabado premium de gamuza en color verde bosque elegante.</p>
+                        <p class="price">$1,349</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Ofertas Imperdibles</h2>
+            <div class="grid-container">
+                <!-- 1. Hamburguesas -->
+                <div class="card">
+                    <div class="card-tag">-30%</div>
+                    <div class="card-img"><img src="tenis9.jpg" alt="Burger Edition"></div>
+                    <div class="card-info">
+                        <h3>Burger Crunch</h3>
+                        <p>Edición especial temática de hamburguesas con un diseño muy divertido.</p>
+                        <p class="price"><span class="old-price">$1,899</span>$1,329</p>
+                    </div>
+                </div>
+                <!-- 2. KFC -->
+                <div class="card">
+                    <div class="card-tag">-25%</div>
+                    <div class="card-img"><img src="tenis10.jpg" alt="KFC Edition"></div>
+                    <div class="card-info">
+                        <h3>Kentucky Style</h3>
+                        <p>Colaboración exclusiva con detalles inspirados en el sabor original de KFC.</p>
+                        <p class="price"><span class="old-price">$1,699</span>$1,274</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Nuestras Sucursales</h2>
+            <div class="sucursales-container">
+                <div class="sucursal-card">
+                    <img src="sucursal1.jpg" alt="Sucursal Centro">
+                    <h3>Sucursal Centro</h3>
+                    <div class="sucursal-info">
+                        <p class="info-item"><span class="icon">📍</span>Av. Principal 123, Centro</p>
+                        <p class="info-item"><span class="icon">📞</span>55 1234 5678</p>
+                        <p class="info-item"><span class="icon">⏰</span>Lunes a viernes 9:00 - 20:00</p>
+                    </div>
+                </div>
+                <div class="sucursal-card">
+                    <img src="sucursal2.jpg" alt="Sucursal Norte">
+                    <h3>Sucursal Norte</h3>
+                    <div class="sucursal-info">
+                        <p class="info-item"><span class="icon">📍</span>Blvd. Norte 456, Col. Jardín</p>
+                        <p class="info-item"><span class="icon">📞</span>55 9876 5432</p>
+                        <p class="info-item"><span class="icon">⏰</span>Sábado y domingo 10:00 - 18:00</p>
+                    </div>
+                </div>
+                <div class="sucursal-card">
+                    <img src="sucursal3.jpg" alt="Sucursal Sur">
+                    <h3>Sucursal Sur</h3>
+                    <div class="sucursal-info">
+                        <p class="info-item"><span class="icon">📍</span>Calle Sur 789, Plaza Central</p>
+                        <p class="info-item"><span class="icon">📞</span>55 1122 3344</p>
+                        <p class="info-item"><span class="icon">⏰</span>Lunes a sábado 9:30 - 19:30</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" target="_blank">📘 Facebook</a>
+            <a href="#" target="_blank">📸 Instagram</a>
+            <a href="#" target="_blank">🎵 TikTok</a>
+        </div>
+        <p>Examen Unidad 3 Tópicos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="codigo.js"></script>
+</body>
+</html>
