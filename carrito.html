@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda tenis- Inicio</title>
+        <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Catálogo</a></li>
+                <li><a href="carrito.html" class="active">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="carrito-container">
+        <h2 class="section-title">Mi Carrito</h2>
+        <table class="carrito">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Categoría</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Acciones</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Classic Street</td>
+                    <td>Niñas</td>
+                    <td>$899.00</td>
+                    <td><input type="number" value="2" min="1"></td>
+                    <td><button class="btn" onclick="removeFromCart(1)">Eliminar</button></td>
+                    <td>$1,798.00</td>
+                </tr>
+                <tr>
+                    <td>Runner Pro</td>
+                    <td>Niños</td>
+                    <td>$1,399.00</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td><button class="btn" onclick="removeFromCart(2)">Eliminar</button></td>
+                    <td>$1,399.00</td>
+                </tr>
+                <tr>
+                    <td>Bluey Style</td>
+                    <td>Niñas</td>
+                    <td>$1,049.00</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td><button class="btn" onclick="removeFromCart(3)">Eliminar</button></td>
+                    <td>$1,049.00</td>
+                </tr>
+                <tr>
+                    <td>Spider Shoes</td>
+                    <td>Niños</td>
+                    <td>$1,099.00</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td><button class="btn" onclick="removeFromCart(4)">Eliminar</button></td>
+                    <td>$1,099.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5" class="total-label">Total a pagar</td>
+                    <td class="total-value">$5,345.00</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/upchiapas" target="_blank">📘 Facebook</a>
+            <a href="https://www.instagram.com/upchiapas" target="_blank">📸 Instagram</a>
+            <a href="https://www.tiktok.com/@upchiapas" target="_blank">🎵 TikTok</a>
+        </div>
+        <p>Examen Unidad 3 Tópicos. Todos los derechos reservados.</p>
+    </footer>
+    <script src="codigo.js"></script>
+</body>
+</html>
